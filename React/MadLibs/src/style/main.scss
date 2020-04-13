@@ -6,11 +6,37 @@ body {
     display: grid;
     justify-items: center;
     grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
+    position: relative;
 }
 
 .header {
     display: grid;
     align-self: center;
+    height: 100px;
+
+    &__skew{
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: plygon(0 0, 1005 0%, 1005 25%, 0 50%);
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 1000px;
+        width: 100vw;
+        background-color: #444444;
+    }
+
+    &__border{
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: plygon(0 0, 1005 0%, 1005 25%, 0 50%);
+        z-index: -11;
+        top: 20px;
+        left: 0;
+        position: absolute;
+        height: 1000px;
+        width: 100vw;
+        background-color: #00cb79;
+    }    
 }
 
 .card {
