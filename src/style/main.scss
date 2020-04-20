@@ -11,6 +11,14 @@
     transform: translateY(50%);
 }
 
+.gray{ 
+background: #b3b3b3;
+}
+
+.green{
+background: #00cb79;
+}
+
 .home {
     display: grid;
     justify-items: center;
@@ -111,9 +119,27 @@
         margin-bottom: 84px;
         padding-bottom: 60px;
 
+
+        font-family: 'Montserrat';
+
+        &__label{
+            height: 18px;
+            width: 18px;
+            line-height: 18px;
+            background: black;
+            border-radius: 50%;
+            font-size: 13px;
+            // line-height: 22px;
+            text-align: center;
+            vertical-align: center;
+            color: white;
+            // padding-top: 3px;
+            display: inline-block; 
+            margin: 4px;
+        }
+
         p {
             padding: 50px 47px;
-            font-family: 'Montserrat';
             font-size: 16px;
             font-weight: 300;
         }
@@ -155,7 +181,6 @@
 
     &__number{
         grid-column: number-s/number-e;
-        background-color: #00cb79;
         color: white;
         font-size: 20px;
         height: 26px;
@@ -164,3 +189,4 @@
         border-radius: 50%;
     }
 }
+
