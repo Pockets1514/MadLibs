@@ -8,7 +8,6 @@
     font-size: 22px;
     text-align: center;
     justify-self: center;
-    transform: translateY(50%);
 }
 
 .gray{ 
@@ -103,10 +102,12 @@ background: #00cb79;
 
     &__generate{
         background-color: #00CB79;
+        transform: translateY(-310px);
         @include button;
     }
 
     &__clear{
+        transform: translateY(50%);
         background-color: #45B0E5;
         @include button;
     }
@@ -129,11 +130,9 @@ background: #00cb79;
             background: black;
             border-radius: 50%;
             font-size: 13px;
-            // line-height: 22px;
             text-align: center;
             vertical-align: center;
             color: white;
-            // padding-top: 3px;
             display: inline-block; 
             margin: 4px;
         }
